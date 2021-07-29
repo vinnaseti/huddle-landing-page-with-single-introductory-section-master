@@ -99,7 +99,7 @@ footer section#contact a:hover {
     color: hsl(300, 69%, 71%);
 }
 
-@media (min-width:800px) {
+@media (min-width:510px) {
     body {
         background-image: url(images/bg-desktop.svg);
         background-size: cover;
