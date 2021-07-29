@@ -1,0 +1,148 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin: 0px;
+    padding: 40px;
+    padding-bottom: 0;
+
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+header img {
+    max-width: 45%;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+section#illustration img {
+    width: 100%;
+}
+
+section#description {
+    color: white;
+}
+
+section#description h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+section#description p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 5px;
+}
+
+section#description button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    padding: .6em 5em;
+    border: 1px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+}
+
+footer {
+    text-align: center;
+}
+
+footer section#contact a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+/* HOVER STATES */
+section#description button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer section#contact a:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+
+.attribution a {
+    color: hsl(300, 69%, 71%);
+}
+
+@media (min-width:480px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-size: cover;
+        padding: 5%;
+        padding-bottom: 0;
+        position: relative;
+
+    }
+
+    main {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin-bottom: 0;
+    }
+
+    main section#illustration {
+        width: 50%;
+    }
+
+    main section#description {
+        margin-top: 10;
+        width: 40%;
+        text-align: left;
+    }
+
+    section#description h1 {
+        font-size: 3vw;
+    }
+
+    section#description p {
+        padding: 0px;
+        font-size: 1.27vw;
+    }
+
+
+    footer {
+        text-align: right;
+        position: absolute;
+        bottom: 0px;
+        right: 5%;
+    }
+
+    footer section#contact a {
+        text-align: center;
+    }
+}
